@@ -13,57 +13,64 @@ class _MainPage extends State<MainPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              TextButton(
+              Expanded(
+                child: Container(
+                  width: double.infinity,
+                color: Color(0xff33CCFF),
+
+          child:TextButton(
+
+
                 onPressed: () {
                   Navigator.of(context).pushNamed('feedback');
                 },
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                ),
+
                 child: const Text(
                   '피드백 받기',
                   style: TextStyle(fontSize: 60, color: Colors.black),
                 ),
               ),
-              const SizedBox(
-                height: 50,
               ),
-              TextButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('myFeedback');
-                },
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                ),
-                child: const Text('나의 피드백',
-                    style: TextStyle(fontSize: 60, color: Colors.black)),
               ),
-              const SizedBox(
-                height: 50,
-              ),
-              TextButton(
+              Expanded(
+                child: Container(
+                    width: double.infinity,
+                    color: Colors.blue,
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('myFeedback');
+                    },
+
+                    child: const Text('나의 피드백',
+                        style: TextStyle(fontSize: 60, color: Colors.black)),
+                  ))),
+
+              Expanded(
+                child: Container(
+                    width: double.infinity,
+                    color: Colors.blueAccent,
+                    child: TextButton(
                 onPressed: () {
                   Navigator.of(context).pushNamed('experts');
                 },
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                ),
+
                 child: const Text('전문가들',
                     style: TextStyle(fontSize: 60, color: Colors.black)),
-              ),
-              const SizedBox(
-                height: 50,
-              ),
-              TextButton(
+              ))),
+              Expanded(
+                child: Container(
+                    width: double.infinity,
+                    color: Colors.grey,
+                    child: TextButton(
                 onPressed: () {
                   Navigator.of(context).pushNamed('settings');
                 },
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                ),
+
                 child: const Text('설정',
                     style: TextStyle(fontSize: 60, color: Colors.black)),
-              ),
+              ))),
+
+
             ],
           ),
         ));

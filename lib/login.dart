@@ -41,7 +41,7 @@ class _Login extends State<Login> with SingleTickerProviderStateMixin {
                     size: 200,
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   TextField(
                     controller: _idTextController,
@@ -53,7 +53,7 @@ class _Login extends State<Login> with SingleTickerProviderStateMixin {
                                 width: 1, color: Colors.blueAccent))),
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   TextField(
                     controller: _pwTextController,
@@ -66,7 +66,7 @@ class _Login extends State<Login> with SingleTickerProviderStateMixin {
                                 width: 1, color: Colors.blueAccent))),
                   ),
                   const SizedBox(
-                    height: 30,
+                    height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
